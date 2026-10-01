@@ -3,24 +3,19 @@
     margin: 0;
     box-sizing: border-box;
     cursor: pointer;
+    outline: 2px solid red;
 }
 body{
-    /* background-color: burlywood; */
     background-image: url(./images/log_back3.webp);
-    /* background-image: url(../../images/log_back.avif); */
     background-size: 100%;
 }
 .container{
     width: 1000px;
     height: 500px;
-    /* border: 1px solid gray; */
     margin: 50px auto;
     display: flex;
-    /* background-image: url(../../images/log_back3.webp); */
-    /* background-image: url(../../images/log_back.avif); */
     background-size: 100% 100%;
     border-radius: 20px;
-    /* gap: 20px; */
     animation-name: mani;
     animation-duration: 3s;
     animation-iteration-count: 1;
@@ -43,13 +38,11 @@ body{
     width: 450px;
     height: 450px;
     border: 1px solid white;
-    /* background-color: transparent; */
     margin: 20px;
     border-radius: 20px;
     background-color: white;
 }
 .box1 h2{
-    /* font-size: 40px; */
     padding-top:60px ;
     padding-left: 170px;
     padding-bottom: 10px;
@@ -58,7 +51,6 @@ body{
 .p1{
     padding-left: 140px;
     color: gray;
-    /* padding-bottom: 20px; */
     font-family: Arial, Helvetica, sans-serif;
 }
 input{
@@ -131,9 +123,6 @@ input:hover{
     margin: 20px;
     border-radius: 20px;
     color: white;
-    /* animation-name: mani;
-    animation-duration: 3s;
-    animation-iteration-count: 2; */
 }
 
 .box2 h1{
@@ -152,14 +141,13 @@ span{
     padding-bottom: 10px;
     color: lightblue;
     font-family: Arial, Helvetica, sans-serif;
-    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
 }
 .p{
     font-size: 18px;
     padding-left:80px ;
     color:gainsboro;
 }
-@media (max-width:575px) {
+/* @media (max-width:575px) {
     .container{
         display: flex;
         flex-direction: column;
@@ -170,5 +158,162 @@ span{
     }
     .box1{
         height: 460px;
+    }
+} */
+
+@media (max-width: 575.99px) {
+    .container {
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+        margin: 0;
+        padding: 16px;
+        flex-direction: column;
+        align-items: center;
+        background-size: cover;
+        animation: none;
+    }
+
+    .box1,
+    .box2 {
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 450px;
+        height: auto;
+        margin: 10px 0;
+        padding: 20px;
+    }
+
+    .box1 h2,
+    .box2 h1,
+    .box2 h3,
+    .p1,
+    .p2,
+    .p3,
+    .p {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .box1 h2 {
+        padding-top: 20px;
+    }
+
+    input {
+        display: block;
+        width: 100%;
+        margin: 16px 0;
+        padding: 14px;
+    }
+
+    .p2 {
+        padding-top: 5px;
+        padding-bottom: 10px;
+    }
+
+    .b {
+        display: block;
+        width: 100%;
+        margin: 12px 0;
+        padding: 14px;
+    }
+
+    .b2 {
+        margin: 8px 4px 0 0;
+    }
+
+    .b3 {
+        margin: 8px 0 0 4px;
+    }
+
+    .box2 h1 {
+        padding: 10px 0 16px;
+        font-size: 32px;
+    }
+
+    .box2 h3 {
+        padding-bottom: 10px;
+        font-size: 24px;
+    }
+
+    .p {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.99px) {
+    .container {
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+        margin: 0;
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+        background-size: cover;
+        animation: none;
+    }
+
+    .box1,
+    .box2 {
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 540px;
+        height: auto;
+        margin: 12px 0;
+        padding: 24px;
+    }
+
+    .box1 h2,
+    .box2 h1,
+    .box2 h3,
+    .p1,
+    .p2,
+    .p3,
+    .p {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .box1 h2 {
+        padding-top: 24px;
+    }
+
+    input {
+        display: block;
+        width: 100%;
+        margin: 16px 0;
+        padding: 14px;
+    }
+
+    .p2 {
+        padding-top: 5px;
+        padding-bottom: 10px;
+    }
+
+    .b {
+        display: block;
+        width: 100%;
+        margin: 12px 0;
+        padding: 14px;
+    }
+
+    .b2,
+    .b3 {
+        margin: 8px 4px 0;
+    }
+
+    .box2 h1 {
+        padding: 10px 0 16px;
+        font-size: 34px;
+    }
+
+    .box2 h3 {
+        padding-bottom: 10px;
+        font-size: 26px;
+    }
+
+    .p {
+        font-size: 17px;
     }
 }
