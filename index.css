@@ -3,7 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     cursor: pointer;
-    outline: 2px solid red;
+    /* outline: 2px solid red; */
 }
 body{
     background-image: url(./images/log_back3.webp);
